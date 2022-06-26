@@ -1,8 +1,6 @@
 <script setup lang="ts">
-const routes = useRouter().getRoutes();
-const route = useRoute();
-
-const examplePages = routes
+const examplePages = useRouter()
+  .getRoutes()
   .filter((route) => {
     return !!route.meta.exampleData;
   })
