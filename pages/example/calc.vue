@@ -26,6 +26,14 @@ const result = computed(() => {
       return numberA.value / numberB.value;
   }
 });
+
+definePageMeta({
+  exampleData: {
+    emoji: "📐",
+    title: "계산기",
+    tags: ["Vue", "Ref", "Computed"],
+  },
+});
 </script>
 
 <template>

@@ -1,4 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  exampleData: {
+    emoji: "🖱️",
+    title: "커서 스타일",
+    tags: ["CSS", "Cursor"],
+  },
+});
+</script>
 
 <template>
   <div class="page">

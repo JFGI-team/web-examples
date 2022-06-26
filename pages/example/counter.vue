@@ -17,6 +17,14 @@ function decrement() {
 function increment() {
   count.value++;
 }
+
+definePageMeta({
+  exampleData: {
+    emoji: "🔢",
+    title: "계수기",
+    tags: ["Vue", "Ref"],
+  },
+});
 </script>
 
 <template>

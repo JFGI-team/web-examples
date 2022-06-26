@@ -24,6 +24,14 @@ function handlePointerMove(event: PointerEvent) {
  * EventTarget.addEventListener() - Web API | MDN - https://developer.mozilla.org/ko/docs/Web/API/EventTarget/addEventListener
  * Event Handling | Vue.js - https://vuejs.org/guide/essentials/event-handling.html
  */
+
+definePageMeta({
+  exampleData: {
+    emoji: "🖱️",
+    title: "포인터 이벤트",
+    tags: ["Vue", "v-on", "PointerEvent"],
+  },
+});
 </script>
 
 <template>
