@@ -17,7 +17,7 @@ const examplePages = useRouter()
 
 <template>
   <div class="page">
-    <ol class="list">
+    <ul class="list">
       <li v-for="example in examplePages" :key="example.to">
         <HomeLinkCard
           :to="example.to"
@@ -26,7 +26,7 @@ const examplePages = useRouter()
           :tags="example.tags"
           class="link" />
       </li>
-    </ol>
+    </ul>
   </div>
 </template>
 
