@@ -18,13 +18,14 @@ useHead({
 </script>
 
 <template>
-  <!-- 
-    Nuxt가 감지한 페이지가 표시될 위치를 지정하는
-    컴포넌트입니다.
+  <div id="app">
+    <!--
+      Nuxt가 감지한 페이지가 표시될 위치를 지정하는 컴포넌트입니다.
+      페이지가 저장되는 pages 폴더 설명은 폴더 안의 📘.md 파일에서 볼 수 있습니다.
 
-    # 참고
-    Nuxt Pages 폴더에 대한 간단한 설명 - /pages/_.md 파일
-    Nuxt 3 - Pages directory — https://v3.nuxtjs.org/guide/directory-structure/pages
-   -->
-  <NuxtPage />
+      # 참고
+      Nuxt 3 - Pages directory — https://v3.nuxtjs.org/guide/directory-structure/pages
+    -->
+    <NuxtPage />
+  </div>
 </template>
