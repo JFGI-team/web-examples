@@ -29,7 +29,7 @@ definePageMeta({
   exampleData: {
     emoji: "🖱️",
     title: "포인터 이벤트",
-    tags: ["Vue", "v-on", "PointerEvent"],
+    tags: ["Vue", "v-on", "HTML", "JS", "PointerEvent"],
   },
 });
 </script>
