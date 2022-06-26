@@ -57,7 +57,7 @@ defineProps<{
   flex-wrap: wrap;
 
   width: calc(100% + 8px);
-  margin: 0 -8px -8px 0;
+  margin: auto -8px -8px 0;
 }
 .link-card > .tags > .tag {
   display: inline-block;

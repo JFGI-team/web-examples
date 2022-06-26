@@ -23,7 +23,8 @@ const examplePages = useRouter()
           :to="example.to"
           :emoji="example.emoji"
           :title="example.title"
-          :tags="example.tags" />
+          :tags="example.tags"
+          class="link" />
       </li>
     </ol>
   </div>
@@ -40,7 +41,7 @@ const examplePages = useRouter()
 
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
   align-content: flex-start;
   gap: 24px;
 
@@ -49,5 +50,8 @@ const examplePages = useRouter()
   width: 100%;
   height: 100%;
   padding: 24px;
+}
+.link {
+  height: 100%;
 }
 </style>
