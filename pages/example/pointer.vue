@@ -25,6 +25,9 @@ function handlePointerMove(event: PointerEvent) {
  * Event Handling | Vue.js - https://vuejs.org/guide/essentials/event-handling.html
  */
 
+useHead({
+  title: "🖱️ 포인터 이벤트",
+});
 definePageMeta({
   exampleData: {
     emoji: "🖱️",

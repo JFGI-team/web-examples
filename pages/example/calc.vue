@@ -27,6 +27,9 @@ const result = computed(() => {
   }
 });
 
+useHead({
+  title: "📐 계산기",
+});
 definePageMeta({
   exampleData: {
     emoji: "📐",

@@ -18,6 +18,9 @@ function increment() {
   count.value++;
 }
 
+useHead({
+  title: "🔢 계수기",
+});
 definePageMeta({
   exampleData: {
     emoji: "🔢",

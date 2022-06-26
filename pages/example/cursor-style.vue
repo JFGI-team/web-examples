@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "🖱️ 커서 스타일",
+});
 definePageMeta({
   exampleData: {
     emoji: "🖱️",
