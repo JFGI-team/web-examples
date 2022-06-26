@@ -1,17 +1,31 @@
 <script setup lang="ts">
-const Examples = [
-  { to: "/example/counter", name: "계수기 - Vue: ref" },
-  { to: "/example/calc", name: "계산기 - Vue: ref, computed" },
-  { to: "/example/pointer", name: "포인터 - Vue: ref, v-on" },
-  { to: "/example/cursor-style", name: "커서 스타일 - CSS: cursor" },
-];
+const routes = useRouter().getRoutes();
+const route = useRoute();
+
+const examplePages = routes
+  .filter((route) => {
+    return !!route.meta.exampleData;
+  })
+  .map((route) => {
+    const meta = route.meta.exampleData;
+    return {
+      to: route.path,
+      emoji: meta.emoji,
+      title: meta.title,
+      tags: meta.tags,
+    };
+  });
 </script>
 
 <template>
   <div class="page">
     <ol class="list">
-      <li v-for="example in Examples" :key="example.to" class="item">
-        <NuxtLink :to="example.to" class="link">{{ example.name }}</NuxtLink>
+      <li v-for="example in examplePages" :key="example.to">
+        <HomeLinkCard
+          :to="example.to"
+          :emoji="example.emoji"
+          :title="example.title"
+          :tags="example.tags" />
       </li>
     </ol>
   </div>
@@ -26,7 +40,16 @@ const Examples = [
   height: 100%;
 }
 
-.link {
-  color: #0969da;
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+  align-content: flex-start;
+  gap: 24px;
+
+  list-style: none;
+
+  width: 100%;
+  height: 100%;
+  padding: 24px;
 }
 </style>
