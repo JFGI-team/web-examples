@@ -25,6 +25,7 @@ export default defineNuxtConfig({
      *
      * # 참고
      * CSS Tools: Reset CSS - https://meyerweb.com/eric/tools/css/reset/
+     * 2022 CSS Reset 다시 써보기! | velog@teo - https://velog.io/@teo/2022-CSS-Reset-다시-써보기
      */
     "~/assets/styles/reset.css",
   ],
