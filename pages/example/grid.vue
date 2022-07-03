@@ -17,6 +17,10 @@ definePageMeta({
       <!-- 📘 Tip
         v-for는 Python의 for-range 처럼 사용할 수 있습니다.
         아래처럼 다중 v-for를 이용해 행/열을 반복할 수 있습니다.
+        대신 1부터 시작합니다.
+
+        # 참고
+        List Rendering | Vue.js #v-for whit a Range - https://vuejs.org/guide/essentials/list.html#v-for-with-a-range
       -->
       <div v-for="i in 5" class="row">
         <div v-for="j in 5" class="cell">

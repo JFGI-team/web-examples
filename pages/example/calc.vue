@@ -13,6 +13,9 @@ const operator = ref("add");
  * 혹은 여러 ref 값 등을 가공할 때 쓸 수 있습니다.
  *
  * ref처럼 스크립트에서는 값을 foo.value 형식으로 접근해야 합니다.
+ *
+ * # 참고
+ * Computed 속성과 Watch | Vue.js #computed-속성 - https://v3.ko.vuejs.org/guide/computed.html#computed-속성
  */
 const result = computed(() => {
   switch (operator.value) {

@@ -22,7 +22,7 @@ function handlePointerMove(event: PointerEvent) {
  *
  * # 참고
  * EventTarget.addEventListener() - Web API | MDN - https://developer.mozilla.org/ko/docs/Web/API/EventTarget/addEventListener
- * Event Handling | Vue.js - https://vuejs.org/guide/essentials/event-handling.html
+ * Event Handling | Vue.js - https://v3.ko.vuejs.org/guide/events.html
  */
 
 useHead({
